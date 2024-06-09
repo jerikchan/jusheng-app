@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import "@/styles/sections/About.scss";
 import { reveal } from "@/lib/Animations";
 import { useTranslation } from "react-i18next";
+import ImageCard from "@/components/commons/ImageCard";
 
 function About() {
   const [element, controls] = useScroll();
@@ -32,25 +33,30 @@ function About() {
           </p>
           <Button content={t('why-title')} />
         </motion.div>
-        <div className="cards" ref={element}>
-          <Card
-            title={t('about-point-1')}
-            logo={<HiLightBulb />}
+        <div className="grid grid-cols-12 gap-[1.5rem]" ref={element}>
+          <ImageCard
+            className="col-span-6 w-auto h-auto"
+            url={'/abouts/about-1.png'}
             animateCustom={controls}
           />
-          <Card
-            title={t('about-point-2')}
-            logo={<BsFillCalendarFill />}
+          <ImageCard
+            className="col-span-6 w-auto h-auto"
+            url={'/abouts/about-2.png'}
             animateCustom={controls}
           />
-          <Card
-            title={t('about-point-3')}
-            logo={<BiSupport />}
+          <ImageCard
+            className="col-span-4 w-auto h-auto"
+            url={'/abouts/about-3.png'}
             animateCustom={controls}
           />
-          <Card
-            title={t('about-point-4')}
-            logo={<SiGooglemessages />}
+          <ImageCard
+            className="col-span-4 w-auto h-auto"
+            url={'/abouts/about-4.png'}
+            animateCustom={controls}
+          />
+          <ImageCard
+            className="col-span-4 w-auto h-auto"
+            url={'/abouts/about-5.png'}
             animateCustom={controls}
           />
         </div>

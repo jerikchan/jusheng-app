@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "@/styles/components/Card.scss";
 import { cardAnimation } from "@/lib/Animations";
-function Card({ logo, title, animateCustom }) {
+function Card({ logo, title, animateCustom }: { logo: React.ReactNode; title: string; animateCustom: string }) {
   return (
     <motion.div
       className="card"
