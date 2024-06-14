@@ -68,30 +68,10 @@ function Product() {
   return (
     <>
       <ProductCard
-        title={t('product-1-title')}
-        subtitle={t('product-1-description')}
-        reasons={[t('product-1-point-1'), t('product-1-point-2'), t('product-1-point-3'), t('product-1-point-4')]}
-        picture="/products/product-1.png"
-      />
-      <ProductCard
-        title={t('product-2-title')}
-        subtitle={t('product-2-description')}
-        reasons={[t('product-2-point-1'), t('product-2-point-2'), t('product-2-point-3'), t('product-2-point-4')]}
-        picture="/products/product-2.png"
-        className="bg-[#efe8ff]"
-      />
-      <ProductCard
-        title={t('product-3-title')}
-        subtitle={t('product-3-description')}
-        reasons={[t('product-3-point-1'), t('product-3-point-2'), t('product-3-point-3'), t('product-3-point-4')]}
-        picture="/products/product-3.png"
-      />
-      <ProductCard
-        title={t('product-4-title')}
-        subtitle={t('product-4-description')}
-        reasons={[t('product-4-point-1'), t('product-4-point-2'), t('product-4-point-3'), t('product-4-point-4')]}
-        picture="/products/product-4.png"
-        className="bg-[#efe8ff]"
+        title={t('original-1-title')}
+        subtitle={t('original-1-description')}
+        reasons={[t('original-1-point-1'), t('original-1-point-2'), t('original-1-point-3'), t('original-1-point-4')]}
+        picture="/originals/original-1.png"
       />
     </>
   )
