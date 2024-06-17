@@ -1,34 +1,33 @@
-import React, { useState } from "react";
-import Button from "./Button";
-import BrandName from "./BrandName";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
-import { motion } from "framer-motion";
-import "@/styles/components/Navbar.scss";
-import { navbarAnimation } from "@/lib/Animations";
-import { LanguageSelector } from "@/components/language-selector";
-import { useTranslation } from "react-i18next";
+import React, { useState } from 'react'
+import Button from './Button'
+import BrandName from './BrandName'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { MdClose } from 'react-icons/md'
+import { motion } from 'framer-motion'
+import '@/styles/components/Navbar.scss'
+import { navbarAnimation } from '@/lib/Animations'
+import { LanguageSelector } from '@/components/language-selector'
+import { useTranslation } from 'react-i18next'
 
 export default function Navbar() {
-  const { t } = useTranslation();
-  const [toggleNavbar, setToggleNavbar] = useState(false);
+  const { t } = useTranslation()
+  const [toggleNavbar, setToggleNavbar] = useState(false)
   const navbarToggler = () => {
-    setToggleNavbar(!toggleNavbar);
-  };
+    setToggleNavbar(!toggleNavbar)
+  }
+  const goContact = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+  }
   return (
     <motion.div
-      className={`navbar ${toggleNavbar === true ? "active" : ""}`}
+      className={`navbar ${toggleNavbar === true ? 'active' : ''}`}
       variants={navbarAnimation}
       transition={{ delay: 0.1 }}
     >
       <div className="col">
         <BrandName />
         <div className="collapseble-button">
-          {!toggleNavbar ? (
-            <GiHamburgerMenu onClick={navbarToggler} />
-          ) : (
-            <MdClose onClick={navbarToggler} />
-          )}
+          {!toggleNavbar ? <GiHamburgerMenu onClick={navbarToggler} /> : <MdClose onClick={navbarToggler} />}
         </div>
       </div>
       <nav>
@@ -52,11 +51,11 @@ export default function Navbar() {
               <LanguageSelector />
             </li>
             <li>
-              <Button content={t('contact')} />
+              <Button content={t('contact')} onClick={goContact} />
             </li>
           </ul>
         </div>
       </nav>
     </motion.div>
-  );
+  )
 }

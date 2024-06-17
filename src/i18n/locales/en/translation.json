@@ -59,5 +59,21 @@
   "about-title": "Company Introduction",
   "about-description": "Guangdong Jusheng New Materials Co., Ltd., established in October 2022, is headquartered in Sanshui District, Foshan City, Guangdong Province. The company focuses on the talc industry and backs the resources of the Jiangxi Guangfeng mining area, known as the 'World Capital of Talc'. By integrating industry resources such as original ore mining, ore fine processing, talc new material research and development, and product sales in the talc industry chain, we have created a product matrix centered on black talc ore particles, black talc powder, black talc masterbatch, and calcinated talc. We provide comprehensive services covering the entire talc industry chain. The company gathers experienced professionals in ceramics, coatings, kilns, and other fields to build a talc research and development base, initiating the roller kiln calcination talc technology domestically for the first time, currently with a calcination talc production processing capacity of 100,000 tons per year.",
 
-  "application-title": "Application Scope"
+  "application-title": "Application Scope",
+
+  "report-title": "Test Report",
+
+  "email": "Email",
+  "phone": "Phone",
+  "phone-mr-zhuang": "Mr.Zhuang",
+  "phone-mr-wang": "Mr.Wang",
+  "address": "Address",
+  "address-detail": "Foshan Sanshui District southwest Street ZhoubianJinxiang Road No.3 09 workshop",
+
+  "application-1": "Plastic",
+  "application-2": "Ceramics",
+  "application-3": "Coatings",
+  "application-4": "Rubber",
+  "application-5": "Pharmaceuticals",
+  "application-6": "Papermaking"
 }

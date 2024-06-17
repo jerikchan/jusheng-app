@@ -8,10 +8,10 @@ function Testimonial({
   picture,
   text,
 }: {
-  variants: any,
-  animate: any,
-  picture: string,
-  text?: string,
+  variants: any
+  animate: any
+  picture: string
+  text?: string
 }) {
   return (
     <motion.div
@@ -20,7 +20,9 @@ function Testimonial({
       animate={animate}
     >
       <img src={picture} className="object-contain w-full h-full" />
-      {text && <div className="absolute left-0 w-full text-center -bottom-8 text-[#5b595f]">{text}</div>}
+      {text && (
+        <div className="absolute left-0 w-full text-4xl md:text-lg text-center -bottom-12 text-[#5b595f]">{text}</div>
+      )}
     </motion.div>
   )
 }

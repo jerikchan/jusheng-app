@@ -43,7 +43,7 @@ function ProductCard({
           {picture && (
             <motion.div variants={videoAnimation} animate={controls} transition={{ type: 'tween', duration: 0.5 }}>
               <div className="flex items-center justify-center w-full overflow-hidden h-72 rounded-2xl">
-                <img src={picture} className="w-full h-full" />
+                <img src={picture} className="object-cover w-full h-full" />
               </div>
             </motion.div>
           )}

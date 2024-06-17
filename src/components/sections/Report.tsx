@@ -5,9 +5,11 @@ import { useScroll } from '@/components/commons/useScroll'
 import { motion } from 'framer-motion'
 import '@/styles/sections/Testimonials.scss'
 import { textAnimation, cardAnimation } from '@/lib/Animations'
+import { useTranslation } from 'react-i18next'
 
 export default function Testimonials() {
   const [element, controls] = useScroll()
+  const { t } = useTranslation()
 
   return (
     <div className="bg-white" id="testimonial" ref={element}>
@@ -20,7 +22,7 @@ export default function Testimonials() {
             duration: 1,
           }}
         >
-          <Title title="检测报告" color="blue" lineCenter={true} />
+          <Title title={t('report-title')} color="blue" lineCenter={true} />
           {/* <p>See what our clients are saying about us.</p> */}
         </motion.div>
         <div className="grid grid-cols-1 gap-12 mt-6 lg:grid-cols-4">

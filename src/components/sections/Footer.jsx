@@ -8,14 +8,16 @@ import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 import '@/styles/sections/Footer.scss'
 import { fromUp, fromDown } from '@/lib/Animations'
+import { useTranslation } from 'react-i18next'
 
 function Footer() {
   const [element, controls] = useScroll()
+  const { t } = useTranslation()
 
   return (
-    <div className="footer-container" ref={element}>
+    <div className="footer-container" ref={element} id="footer">
       <div className="container">
-        <div className="main-container">
+        <div className="justify-between !flex md:flex-row flex-col main-container">
           <motion.div className="news-letter" variants={fromUp} animate={controls} transition={{ duration: 0.5 }}>
             <BrandName isFooter={true} />
             {/* <p>Join our newsletter to get updated with our Offers & Discounts.</p>
@@ -26,7 +28,12 @@ function Footer() {
               </button>
             </div> */}
           </motion.div>
-          <motion.div className="quick-links" variants={fromDown} animate={controls} transition={{ duration: 0.5 }}>
+          {/* <motion.div
+            className="quick-links [visibility:hidden]"
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <h3>Quick Links</h3>
             <ul>
               <li>
@@ -55,7 +62,12 @@ function Footer() {
               </li>
             </ul>
           </motion.div>
-          <motion.div className="industries" variants={fromUp} animate={controls} transition={{ duration: 0.5 }}>
+          <motion.div
+            className="[visibility:hidden] industries"
+            variants={fromUp}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
             <h3>Industires</h3>
             <ul>
               <li>
@@ -80,15 +92,21 @@ function Footer() {
                 <a href="#">IOS App Development</a>
               </li>
             </ul>
-          </motion.div>
-          <motion.div className="touch" variants={fromDown} animate={controls} transition={{ duration: 0.5 }}>
-            <h3>联系我们</h3>
+          </motion.div> */}
+          <motion.div
+            className="touch"
+            id="contact"
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
+            <h3>{t('contact')}</h3>
             <div className="touch-section">
               <div className="icon">
                 <MdEmail />
               </div>
               <div className="detail">
-                <div className="detail-name">邮箱</div>
+                <div className="detail-name">{t('email')}</div>
                 <div className="detail-content">
                   <a href="#">sanfengyuan2020@163.com</a>
                 </div>
@@ -99,12 +117,12 @@ function Footer() {
                 <FaPhoneAlt />
               </div>
               <div className="detail">
-                <div className="detail-name">电话</div>
+                <div className="detail-name">{t('phone')}</div>
                 <div className="detail-content">
-                  <a href="#">+86 17322711375 庄生</a>
+                  <a href="#">+86 17322711375 {t('phone-mr-zhuang')}</a>
                 </div>
                 <div className="detail-content">
-                  <a href="#">+86 17322700796 王生</a>
+                  <a href="#">+86 17322700796 {t('phone-mr-wang')}</a>
                 </div>
                 <div className="detail-content">
                   <a href="#">0757-83138614</a>
@@ -117,9 +135,9 @@ function Footer() {
                 <ImLocation />
               </div>
               <div className="detail">
-                <div className="detail-name">地址</div>
+                <div className="detail-name">{t('address')}</div>
                 <div className="detail-content">
-                  <a href="#"> 佛山市三水区西南街道洲边金祥二路3号09厂房</a>
+                  <a href="#"> {t('address-detail')}</a>
                 </div>
               </div>
             </div>

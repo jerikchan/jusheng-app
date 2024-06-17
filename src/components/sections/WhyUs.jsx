@@ -1,19 +1,18 @@
-import React from "react";
-import WhyUsCard from "@/components/commons/WhyUsCard";
-import Button from "@/components/commons/Button";
-import Title from "@/components/commons/Title";
-import { useScroll } from "@/components/commons/useScroll";
-import { motion } from "framer-motion";
-import BlogImage1 from "@/assets/blogImage1.jpg";
-import BlogImage2 from "@/assets/blogImage2.jpg";
-import BlogImage3 from "@/assets/blogImage3.jpg";
-import "@/styles/sections/WhyUs.scss";
-import { textAnimation, cardAnimation } from "@/lib/Animations";
-import { useTranslation } from "react-i18next";
+import React from 'react'
+import WhyUsCard from '@/components/commons/WhyUsCard'
+import Title from '@/components/commons/Title'
+import { useScroll } from '@/components/commons/useScroll'
+import { motion } from 'framer-motion'
+import BlogImage1 from '@/assets/blogImage1.jpg'
+import BlogImage2 from '@/assets/blogImage2.jpg'
+import BlogImage3 from '@/assets/blogImage3.jpg'
+import '@/styles/sections/WhyUs.scss'
+import { textAnimation, fromUp } from '@/lib/Animations'
+import { useTranslation } from 'react-i18next'
 
 function WhyUs() {
-  const [element, controls] = useScroll();
-  const { t } = useTranslation();
+  const [element, controls] = useScroll()
+  const { t } = useTranslation()
 
   return (
     <div className="why-us-container" id="why-us" ref={element}>
@@ -32,21 +31,21 @@ function WhyUs() {
             image={BlogImage1}
             title={t('why-us-point-title-1')}
             subTitle={t('why-us-point-detail-1')}
-            variants={cardAnimation}
+            variants={fromUp}
             animate={controls}
           />
           <WhyUsCard
             image={BlogImage2}
             title={t('why-us-point-title-2')}
             subTitle={t('why-us-point-detail-2')}
-            variants={cardAnimation}
+            variants={fromUp}
             animate={controls}
           />
           <WhyUsCard
             image={BlogImage3}
             title={t('why-us-point-title-3')}
             subTitle={t('why-us-point-detail-3')}
-            variants={cardAnimation}
+            variants={fromUp}
             animate={controls}
           />
         </div>
@@ -59,7 +58,7 @@ function WhyUs() {
         </div> */}
       </div>
     </div>
-  );
+  )
 }
 
-export default WhyUs;
+export default WhyUs

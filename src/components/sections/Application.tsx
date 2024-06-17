@@ -25,13 +25,43 @@ export default function Testimonials() {
           <Title title={t('application-title')} color="blue" lineCenter={true} />
           {/* <p>See what our clients are saying about us.</p> */}
         </motion.div>
-        <div className="grid grid-cols-1 gap-12 mt-6 lg:grid-cols-3">
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/塑料.jpg" text="塑料" />
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/陶瓷2.jpg" text="陶瓷" />
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/涂料.jpg" text="涂料" />
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/橡胶.png" text="橡胶" />
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/医药2.png" text="医药" />
-          <Testimonial variants={cardAnimation} animate={controls} picture="/images/造纸.png" text="造纸" />
+        <div className="grid grid-cols-1 gap-16 mt-6 lg:grid-cols-3">
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/塑料.jpg"
+            text={t('application-1')}
+          />
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/陶瓷2.jpg"
+            text={t('application-2')}
+          />
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/涂料.jpg"
+            text={t('application-3')}
+          />
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/橡胶.png"
+            text={t('application-4')}
+          />
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/医药2.png"
+            text={t('application-5')}
+          />
+          <Testimonial
+            variants={cardAnimation}
+            animate={controls}
+            picture="/images/造纸.png"
+            text={t('application-6')}
+          />
         </div>
       </div>
     </div>

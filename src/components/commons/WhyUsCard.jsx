@@ -1,16 +1,10 @@
-import React from "react";
-import Button from "./Button";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { motion } from "framer-motion";
-import "@/styles/components/WhyUsCard.scss";
+import React from 'react'
+import { motion } from 'framer-motion'
+import '@/styles/components/WhyUsCard.scss'
 
 function WhyUsCard({ image, title, subTitle, variants, animate }) {
   return (
-    <motion.div
-      className="why-us-card-container"
-      variants={variants}
-      animate={animate}
-    >
+    <motion.div className="why-us-card-container">
       <div className="image">
         <img src={image} alt="Why us" />
       </div>
@@ -28,7 +22,7 @@ function WhyUsCard({ image, title, subTitle, variants, animate }) {
         /> */}
       </div>
     </motion.div>
-  );
+  )
 }
 
-export default WhyUsCard;
+export default WhyUsCard
