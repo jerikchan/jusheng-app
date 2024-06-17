@@ -19,7 +19,7 @@ function Card({
   return (
     <motion.div
       className={cn(
-        'w-[15rem] h-[8rem] box-content bg-white px-4 py-6 rounded-[0.4rem] shadow-[rgba(0,_0,_0,_0.15)_0px_5px_15px_0px] flex flex-col justify-between [transition:0.4s_ease-in-out] hover:shadow-[rgba(243,_42,_143,_0.1843137255)_5px_5px,_rgba(243,_42,_143,_0.1176470588)_10px_10px,_rgba(243,_42,_143,_0.0078431373)_15px_15px]',
+        'w-[15rem] h-[8rem] box-content bg-white px-4 py-6 rounded-[0.4rem] shadow-[rgba(0,_0,_0,_0.15)_0px_5px_15px_0px] flex flex-col justify-between [transition:0.4s_ease-in-out] hover:shadow-[rgba(243, 42, 143, 0.1843137255) 5px 5px, rgba(243, 42, 143, 0.1176470588) 10px 10px, rgba(243, 42, 143, 0.0078431373) 15px 15px]',
         className,
       )}
       variants={cardAnimation}
