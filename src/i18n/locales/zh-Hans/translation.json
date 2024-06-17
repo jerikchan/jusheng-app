@@ -2,8 +2,8 @@
   "brand": "聚盛",
   "contact": "联系我们",
 
-  "starter-title": "广东聚盛新材料",
-  "starter-description": "原生369品质滑石 | 背靠“世界滑石之都”江西广丰矿区资源公司，集聚陶瓷、涂料、窑炉等经验丰富的专业人才投入建设滑石研发基地，国内首创以辑道窑煅烧滑石技术",
+  "starter-title": "原生369品质滑石",
+  "starter-description": "背靠“世界滑石之都”江西广丰矿区资源公司，集聚陶瓷、涂料、窑炉等经验丰富的专业人才投入建设滑石研发基地，国内首创以辑道窑煅烧滑石技术",
   "watch-video": "查看视频",
 
   "why-us-title": "为什么选择聚盛？",
@@ -75,5 +75,11 @@
   "application-3": "涂料",
   "application-4": "橡胶",
   "application-5": "医药",
-  "application-6": "造纸"
+  "application-6": "造纸",
+
+  "Home": "首页",
+  "About": "关于",
+  "Product": "产品",
+  "Application": "应用",
+  "Strength": "实力"
 }

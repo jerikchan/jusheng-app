@@ -1,8 +1,6 @@
 import React from 'react'
 import Footer from '@/components/sections/Footer'
-import Report from '@/components/sections/Report'
-import Quality from '@/components/sections/Quality'
-import Original from '@/components/sections/Original'
+import WhyUs from '@/components/sections/WhyUs'
 import ScrollToTop from '@/components/commons/ScrollToTop'
 import { motion } from 'framer-motion'
 import Navbar from '@/components/commons/Navbar'
@@ -12,13 +10,8 @@ function App() {
     <motion.div initial="hidden" animate="show" className="app">
       <ScrollToTop />
       <Navbar />
-
-      {/* 矿产来源 */}
-      <Original />
-      {/* 品质保障 */}
-      <Quality />
-      {/* 检测报告 */}
-      <Report />
+      {/* 公司实力 */}
+      <WhyUs />
 
       <Footer />
     </motion.div>

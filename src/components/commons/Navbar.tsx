@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import Button from './Button'
 import BrandName from './BrandName'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
-import { motion } from 'framer-motion'
 import '@/styles/components/Navbar.scss'
-import { navbarAnimation } from '@/lib/Animations'
 import { LanguageSelector } from '@/components/language-selector'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const { t } = useTranslation()
@@ -15,15 +13,11 @@ export default function Navbar() {
   const navbarToggler = () => {
     setToggleNavbar(!toggleNavbar)
   }
-  const goContact = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-  }
+  // const goContact = () => {
+  //   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+  // }
   return (
-    <motion.div
-      className={`navbar ${toggleNavbar === true ? 'active' : ''}`}
-      variants={navbarAnimation}
-      transition={{ delay: 0.1 }}
-    >
+    <div className={`navbar ${toggleNavbar === true ? 'active' : ''}`}>
       <div className="col">
         <BrandName />
         <div className="collapseble-button">
@@ -33,29 +27,30 @@ export default function Navbar() {
       <nav>
         <div className="links">
           <ul>
-            {/* <li>
-              <a href="#about">About</a>
+            <li>
+              <Link to="/">{t('Home')}</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/about">{t('About')}</Link>
+            </li>
+            <li>
+              <Link to="/product">{t('Product')}</Link>
             </li>
 
             <li>
-              <a href="#testimonial">Testimonial</a>
+              <Link to="/application">{t('Application')}</Link>
             </li>
 
             <li>
-              <a href="#blog">Blog</a>
-            </li> */}
+              <Link to="/strength">{t('Strength')}</Link>
+            </li>
             <li>
               <LanguageSelector />
             </li>
-            <li>
-              <Button content={t('contact')} onClick={goContact} />
-            </li>
+            <li>{/* <Button content={t('contact')} onClick={goContact} /> */}</li>
           </ul>
         </div>
       </nav>
-    </motion.div>
+    </div>
   )
 }

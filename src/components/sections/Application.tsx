@@ -12,7 +12,7 @@ export default function Testimonials() {
   const { t } = useTranslation()
 
   return (
-    <div className="bg-[rgba(68,_114,_196,_0.4)]" id="testimonial" ref={element}>
+    <div className="" id="testimonial" ref={element}>
       <div className="mx-[10%] py-20">
         <motion.div
           className="flex flex-col items-center justify-center"

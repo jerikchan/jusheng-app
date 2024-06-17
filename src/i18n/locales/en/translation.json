@@ -2,8 +2,8 @@
   "brand": "Jusheng",
   "contact": "Contact Us",
 
-  "starter-title": "Guangdong Jusheng New Materials",
-  "starter-description": "Natural 369 Quality Talc | Backing the resources of Jiangxi Guangfeng mine area, known as the 'World Capital of Talc', we gather experienced professionals in ceramics, coatings, kilns, and other fields to build a talc research and development base, initiating the roller kiln calcination talc technology domestically for the first time.",
+  "starter-title": "Natural 369 Quality Talc ",
+  "starter-description": "Backing the resources of Jiangxi Guangfeng mine area, known as the 'World Capital of Talc', we gather experienced professionals in ceramics, coatings, kilns, and other fields to build a talc research and development base, initiating the roller kiln calcination talc technology domestically for the first time.",
   "watch-video": "Watch Video",
 
   "why-us-title": "Why Choose Jusheng?",
@@ -75,5 +75,11 @@
   "application-3": "Coatings",
   "application-4": "Rubber",
   "application-5": "Pharmaceuticals",
-  "application-6": "Papermaking"
+  "application-6": "Papermaking",
+
+  "Home": "Home",
+  "About": "About",
+  "Product": "Product",
+  "Application": "Application",
+  "Strength": "Strength"
 }

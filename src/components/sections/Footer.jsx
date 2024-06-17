@@ -145,7 +145,7 @@ function Footer() {
         </div>
         <div className="copyright">
           <div className="copy">
-            <p>Copyright c 2021. All Rights Reserved.</p>
+            <p>Copyright c 2024. All Rights Reserved.</p>
           </div>
           <div className="icons">
             <div className="icon">

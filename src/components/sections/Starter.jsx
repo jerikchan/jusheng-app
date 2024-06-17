@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '@/components/commons/Navbar'
 import Button from '@/components/commons/Button'
 import { useScroll } from '@/components/commons/useScroll'
 import { GoPlay } from 'react-icons/go'
@@ -13,10 +12,12 @@ import { Dialog, DialogTrigger, DialogContent } from '@/components/ui/dialog'
 export default function Starter() {
   const [element, controls] = useScroll()
   const { t } = useTranslation()
+  const goContact = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <div className="main-container" ref={element}>
-      <Navbar />
       <div className="container">
         <motion.div
           className="content"
@@ -39,6 +40,7 @@ export default function Starter() {
                 </video>
               </DialogContent>
             </Dialog>
+            <Button content={t('contact')} onClick={goContact} />
             {/* <Button color="pink" content="Request Quote" icon={<HiOutlineArrowNarrowRight />} /> */}
           </div>
         </motion.div>
