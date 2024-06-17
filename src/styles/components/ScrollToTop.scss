@@ -1,5 +1,6 @@
 .scrollToTop {
-  background-color: rgb(18, 18, 88);
+  padding: 0!important;
+  background-color: rgba(68, 114, 196, 0.4);
   border-radius: 100%;
   position: fixed;
   height: 4rem;
@@ -18,7 +19,7 @@
   &:hover {
     background-color: white;
     svg {
-      color: rgb(18, 18, 88);
+      color:  rgba(68, 114, 196, 0.4);
     }
   }
 }

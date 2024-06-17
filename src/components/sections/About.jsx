@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '@/components/commons/Button'
 import Title from '@/components/commons/Title'
 import { useScroll } from '@/components/commons/useScroll'
 import { motion } from 'framer-motion'
@@ -24,11 +23,11 @@ function About() {
         >
           <Title title={t('about-title')} color="blue" />
           <p>{t('about-description')}</p>
-          <Button content={t('why-title')} />
+          {/* <Button content={t('why-title')} /> */}
         </motion.div>
         <div className="grid grid-cols-12 gap-[1.5rem]" ref={element}>
           <ImageCard className="w-auto h-auto col-span-6" url={'/abouts/about-1.png'} animateCustom={controls} />
-          <ImageCard className="w-auto h-auto col-span-6" url={'/abouts/about-2.png'} animateCustom={controls} />
+          <ImageCard className="w-auto h-auto col-span-6" url={'/images/2@5x.jpg'} animateCustom={controls} />
           <ImageCard className="w-auto h-auto col-span-4" url={'/abouts/about-3.png'} animateCustom={controls} />
           <ImageCard className="w-auto h-auto col-span-4" url={'/abouts/about-4.png'} animateCustom={controls} />
           <ImageCard className="w-auto h-auto col-span-4" url={'/abouts/about-5.png'} animateCustom={controls} />

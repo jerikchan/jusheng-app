@@ -51,7 +51,7 @@ function ProductCard({
             animate={controls}
             transition={{ type: 'tween', duration: 0.5 }}
           >
-            <ul className="ps-10">
+            <ul className="ps-10 pt-10">
               {reasons.map((reason, index) => (
                 <li key={index}>{reason}</li>
               ))}
@@ -71,7 +71,7 @@ function Product() {
         title={t('original-1-title')}
         subtitle={t('original-1-description')}
         reasons={[t('original-1-point-1'), t('original-1-point-2'), t('original-1-point-3'), t('original-1-point-4')]}
-        picture="/originals/original-1.png"
+        picture="/images/1.jpg"
       />
     </>
   )

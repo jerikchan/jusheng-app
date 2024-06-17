@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
-import { BiUpArrow } from "react-icons/bi";
-import "@/styles/components/ScrollToTop.scss";
+import React, { useEffect, useState } from 'react'
+import { BiUpArrow } from 'react-icons/bi'
+import '@/styles/components/ScrollToTop.scss'
 
 function ScrollToTop() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false)
   const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+    const scrolled = document.documentElement.scrollTop
     if (scrolled > 300) {
-      setVisible(true);
+      setVisible(true)
     } else if (scrolled <= 300) {
-      setVisible(false);
+      setVisible(false)
     }
-  };
+  }
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-    });
-  };
+    })
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisible);
+    window.addEventListener('scroll', toggleVisible)
     return () => {
-      window.removeEventListener("scroll", toggleVisible);
+      window.removeEventListener('scroll', toggleVisible)
     }
   }, [])
 
@@ -33,7 +33,7 @@ function ScrollToTop() {
         </div>
       )}
     </>
-  );
+  )
 }
 
-export default ScrollToTop;
+export default ScrollToTop

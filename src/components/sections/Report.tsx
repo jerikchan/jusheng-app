@@ -23,7 +23,7 @@ export default function Testimonials() {
           <Title title="检测报告" color="blue" lineCenter={true} />
           {/* <p>See what our clients are saying about us.</p> */}
         </motion.div>
-        <div className="grid grid-cols-1 gap-12 mt-6 sm:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 mt-6 lg:grid-cols-4">
           <Testimonial
             content="The best on the net! Software development saved my business. I use
         Software development often. I am really satisfied with my Software
